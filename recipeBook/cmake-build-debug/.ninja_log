@@ -1,0 +1,12 @@
+# ninja log v5
+1	847	7013735017501893	recipeBook_autogen/timestamp	1668373c8249d8a8
+1	847	7013735017501893	recipeBook_autogen/mocs_compilation.cpp	1668373c8249d8a8
+1	847	7013735017501893	C:/College/GitHub/recipeBook/recipeBook/cmake-build-debug/recipeBook_autogen/timestamp	1668373c8249d8a8
+1	847	7013735017501893	C:/College/GitHub/recipeBook/recipeBook/cmake-build-debug/recipeBook_autogen/mocs_compilation.cpp	1668373c8249d8a8
+856	2376	7013735034695800	CMakeFiles/recipeBook.dir/main.cpp.obj	813dd0e07e9f13c
+859	2387	7013735034785820	CMakeFiles/recipeBook.dir/popup.cpp.obj	ec2fcc70122f85cc
+848	2395	7013735034875842	CMakeFiles/recipeBook.dir/recipeBook_autogen/mocs_compilation.cpp.obj	f9da61f8bc618597
+862	2399	7013735034925855	CMakeFiles/recipeBook.dir/recipepage.cpp.obj	55d44cf55a4dc8e8
+854	2553	7013735036456204	CMakeFiles/recipeBook.dir/mainwindow.cpp.obj	a7a775ade6e26b04
+851	2698	7013735037896528	CMakeFiles/recipeBook.dir/recipe.cpp.obj	11575a3a3d2349f6
+2698	2896	7013735039861144	recipeBook.exe	ece8bf327040eff4

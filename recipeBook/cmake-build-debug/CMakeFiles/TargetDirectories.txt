@@ -1,0 +1,9 @@
+C:/College/GitHub/recipeBook/recipeBook/cmake-build-debug/CMakeFiles/recipeBook.dir
+C:/College/GitHub/recipeBook/recipeBook/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/College/GitHub/recipeBook/recipeBook/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/College/GitHub/recipeBook/recipeBook/cmake-build-debug/CMakeFiles/list_install_components.dir
+C:/College/GitHub/recipeBook/recipeBook/cmake-build-debug/CMakeFiles/install.dir
+C:/College/GitHub/recipeBook/recipeBook/cmake-build-debug/CMakeFiles/install/local.dir
+C:/College/GitHub/recipeBook/recipeBook/cmake-build-debug/CMakeFiles/install/strip.dir
+C:/College/GitHub/recipeBook/recipeBook/cmake-build-debug/CMakeFiles/recipeBook_autogen_timestamp_deps.dir
+C:/College/GitHub/recipeBook/recipeBook/cmake-build-debug/CMakeFiles/recipeBook_autogen.dir
