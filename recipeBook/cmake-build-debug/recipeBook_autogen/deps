@@ -1,14 +1,21 @@
 recipeBook_autogen/timestamp: \
 	C:/College/GitHub/recipeBook/recipeBook/CMakeLists.txt \
+	C:/College/GitHub/recipeBook/recipeBook/Image.h \
 	C:/College/GitHub/recipeBook/recipeBook/cmake-build-debug/CMakeFiles/3.24.2/CMakeCXXCompiler.cmake \
 	C:/College/GitHub/recipeBook/recipeBook/cmake-build-debug/CMakeFiles/3.24.2/CMakeRCCompiler.cmake \
 	C:/College/GitHub/recipeBook/recipeBook/cmake-build-debug/CMakeFiles/3.24.2/CMakeSystem.cmake \
 	C:/College/GitHub/recipeBook/recipeBook/cmake-build-debug/recipeBook_autogen/moc_predefs.h \
+	C:/College/GitHub/recipeBook/recipeBook/ingredients.cpp \
+	C:/College/GitHub/recipeBook/recipeBook/ingredients.h \
 	C:/College/GitHub/recipeBook/recipeBook/main.cpp \
 	C:/College/GitHub/recipeBook/recipeBook/mainwindow.cpp \
 	C:/College/GitHub/recipeBook/recipeBook/mainwindow.h \
 	C:/College/GitHub/recipeBook/recipeBook/popup.cpp \
 	C:/College/GitHub/recipeBook/recipeBook/popup.h \
+	C:/College/GitHub/recipeBook/recipeBook/recipe.cpp \
+	C:/College/GitHub/recipeBook/recipeBook/recipe.h \
+	C:/College/GitHub/recipeBook/recipeBook/recipeText.cpp \
+	C:/College/GitHub/recipeBook/recipeBook/recipeText.h \
 	C:/College/GitHub/recipeBook/recipeBook/recipepage.cpp \
 	C:/College/GitHub/recipeBook/recipeBook/recipepage.h \
 	C:/Qt/6.4.2/mingw_64/include/QtCore/qabstractitemmodel.h \

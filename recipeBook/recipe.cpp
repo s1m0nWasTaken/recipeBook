@@ -58,3 +58,12 @@ std::string recipe::getIngredientName(ingredients ingredient)
     return ingredient.name;
 }
 
+const std::string &recipe::getName() const
+{
+    return Name;
+}
+
+void recipe::setName(const std::string &name)
+{
+    Name = name;
+}

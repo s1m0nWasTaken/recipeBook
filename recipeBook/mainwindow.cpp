@@ -11,6 +11,12 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     ui->listWidget->addItem("test");
+    for (int i = 0; i < 5; i++)
+    {
+        recipes[i] = new recipe;
+        recipes[i]->setName("test " + std::to_string(i));
+        ui->listWidget->addItem(QString::fromStdString(recipes[i]->getName()));
+    }
     popUp *window = new popUp();
     connect(ui->pushButton, &QPushButton::clicked, window, &popUp::show);
 }

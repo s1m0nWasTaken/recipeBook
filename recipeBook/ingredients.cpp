@@ -4,7 +4,7 @@
 
 #include "ingredients.h"
 
-ingredients::ingredients(double size, int type) : type(type)
+ingredients::ingredients(double size, int type, std::string name) : type(type), name(name)
 {
     switch(type)
     {
@@ -40,3 +40,4 @@ std::string ingredients::toString() {
 
     return temp;
 };
+

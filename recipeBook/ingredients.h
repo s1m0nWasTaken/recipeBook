@@ -1,7 +1,3 @@
-//
-// Created by szymo on 26/03/2023.
-//
-
 #ifndef RECIPEBOOK_INGREDIENTS_H
 #define RECIPEBOOK_INGREDIENTS_H
 
@@ -11,7 +7,7 @@
 class ingredients
 {
 public:
-    ingredients(double size, int type);
+    ingredients(double size, int type, std::string);
 
     ~ingredients();
 

@@ -6,7 +6,7 @@
 #include "vector"
 
 
-class recipe : Image, recipeText
+class recipe : public Image, public recipeText
 {
 public:
     struct NationalCuisine{
@@ -17,6 +17,7 @@ public:
         bool Russian;
         bool Ukrainian;
     };
+
     void showText();
     recipe* operator+(ingredients);
 
@@ -30,12 +31,17 @@ public:
 
     std::string getIngredientName(ingredients ingredient);
 
+    const std::string &getName() const;
+
+    void setName(const std::string &name);
+
 private:
     void addImage(std::string string) override;
 
     void removeImage() override;
 
 private:
+    std::string Name;
     std::string Image;
     std::vector <ingredients> listIngredients;
 };

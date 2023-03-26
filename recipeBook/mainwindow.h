@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 #include "QListWidgetItem"
 #include <QMainWindow>
+#include "recipe.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,7 +21,7 @@ public slots:
 
     void on_listWidget_itemClicked(QListWidgetItem *item);
 private:
-
+    recipe *recipes[5];
     Ui::MainWindow *ui;
 };
 #endif // MAINWINDOW_H
