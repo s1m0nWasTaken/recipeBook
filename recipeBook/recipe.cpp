@@ -1,15 +1,60 @@
+#include <iostream>
 #include "recipe.h"
-#include "ui_recipe.h"
+#include "recipeText.h"
+#include "Image.h"
+#include "ingredients.h"
 
-Recipe::Recipe(QWidget *parent) :
-    QDialog(parent),
-    ui(new Ui::Recipe)
+/*
+ * Overloading the "+" operator
+ */
+recipe* recipe::operator+(ingredients newIngredient)
 {
-    ui->setupUi(this);
+    listIngredients.push_back(newIngredient);
+    return this;
+};
 
+void recipe::addImage(std::string string)
+{
+    Image = string;
 }
 
-Recipe::~Recipe()
+const std::string &recipe::getImage() const
 {
-    delete ui;
+    return Image;
 }
+
+void recipe::setImage(const std::string &image)
+{
+    Image = image;
+}
+
+const std::vector<ingredients> &recipe::getListIngredients() const
+{
+    return listIngredients;
+}
+
+void recipe::setListIngredients(const std::vector<ingredients> &listIngredients)
+{
+    recipe::listIngredients = listIngredients;
+}
+
+
+void recipe::removeImage()
+{
+    Image = "";
+}
+
+void recipe::showText()
+{
+    for(ingredients i: listIngredients)
+    {
+        std::cout << i.toString() << getIngredientName(i) << std::endl;
+    }
+    std::cout << storeText << std::endl;
+};
+
+std::string recipe::getIngredientName(ingredients ingredient)
+{
+    return ingredient.name;
+}
+

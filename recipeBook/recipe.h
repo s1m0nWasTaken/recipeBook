@@ -1,22 +1,44 @@
-#ifndef RECIPE_H
-#define RECIPE_H
+#ifndef RECIPEBOOK_RECIPE_H
+#define RECIPEBOOK_RECIPE_H
+#include "recipeText.h"
+#include "Image.h"
+#include "ingredients.h"
+#include "vector"
 
-#include <QDialog>
 
-namespace Ui {
-class Recipe;
-}
-
-class Recipe : public QDialog
+class recipe : Image, recipeText
 {
-    Q_OBJECT
-
 public:
-    explicit Recipe(QWidget *parent = nullptr);
-    ~Recipe();
+    struct NationalCuisine{
+        bool Polish;
+        bool Indian;
+        bool Italian;
+        bool Chinese;
+        bool Russian;
+        bool Ukrainian;
+    };
+    void showText();
+    recipe* operator+(ingredients);
+
+    const std::string &getImage() const;
+
+    void setImage(const std::string &image);
+
+    const std::vector<ingredients> &getListIngredients() const;
+
+    void setListIngredients(const std::vector<ingredients> &listIngredients);
+
+    std::string getIngredientName(ingredients ingredient);
 
 private:
-    Ui::Recipe *ui;
+    void addImage(std::string string) override;
+
+    void removeImage() override;
+
+private:
+    std::string Image;
+    std::vector <ingredients> listIngredients;
 };
 
-#endif // RECIPE_H
+
+#endif //RECIPEBOOK_RECIPE_H

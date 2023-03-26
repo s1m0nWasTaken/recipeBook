@@ -1,11 +1,12 @@
 # ninja log v5
-10	597	7011152518391097	recipeBook_autogen/timestamp	1e0e954092da299c
-10	597	7011152518391097	recipeBook_autogen/mocs_compilation.cpp	1e0e954092da299c
-10	597	7011152518391097	C:/College/GitHub/recipeBook/build-recipeBook-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/recipeBook_autogen/timestamp	1e0e954092da299c
-10	597	7011152518391097	C:/College/GitHub/recipeBook/build-recipeBook-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/recipeBook_autogen/mocs_compilation.cpp	1e0e954092da299c
-597	2066	7011152534334682	CMakeFiles/recipeBook.dir/recipeBook_autogen/mocs_compilation.cpp.obj	137936c6529763f5
-603	2263	7011152536305132	CMakeFiles/recipeBook.dir/mainwindow.cpp.obj	3bb478813d4239c0
-250	1615	7011134467069771	CMakeFiles/recipeBook.dir/main.cpp.obj	34955e7ce3127d3
-2376	2542	7011152539067320	recipeBook.exe	fb849a04662754b6
+8	1687	7013764847834235	recipeBook_autogen/timestamp	1e0e954092da299c
+8	1687	7013764847834235	recipeBook_autogen/mocs_compilation.cpp	1e0e954092da299c
+8	1687	7013764847834235	C:/College/GitHub/recipeBook/build-recipeBook-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/recipeBook_autogen/timestamp	1e0e954092da299c
+8	1687	7013764847834235	C:/College/GitHub/recipeBook/build-recipeBook-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/recipeBook_autogen/mocs_compilation.cpp	1e0e954092da299c
+1688	3337	7013764865458215	CMakeFiles/recipeBook.dir/recipeBook_autogen/mocs_compilation.cpp.obj	137936c6529763f5
+1693	3597	7013764868048833	CMakeFiles/recipeBook.dir/mainwindow.cpp.obj	3bb478813d4239c0
+1690	3330	7013764865368185	CMakeFiles/recipeBook.dir/main.cpp.obj	34955e7ce3127d3
+3597	3889	7013764870947490	recipeBook.exe	7630365a93859479
 600	2376	7011152537435387	CMakeFiles/recipeBook.dir/recipe.cpp.obj	70ad5a4a53864b42
-605	2112	7011152534794793	CMakeFiles/recipeBook.dir/popup.cpp.obj	87e06b8701ba6152
+1697	3328	7013764865348179	CMakeFiles/recipeBook.dir/popup.cpp.obj	87e06b8701ba6152
+1695	3561	7013764867698751	CMakeFiles/recipeBook.dir/recipepage.cpp.obj	82135cbe5236cae9

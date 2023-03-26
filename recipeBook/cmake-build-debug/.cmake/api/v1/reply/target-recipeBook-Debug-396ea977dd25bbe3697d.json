@@ -34,7 +34,7 @@
 			"C:/Qt/6.4.2/mingw_64/lib/cmake/Qt6/Qt6Config.cmake",
 			"C:/Qt/6.4.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
 			"C:/Qt/6.4.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
-			"C:/Qt/Tools/CMake_64/share/cmake-3.24/Modules/CMakeFindDependencyMacro.cmake",
+			"C:/Users/szymo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8836.42/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeFindDependencyMacro.cmake",
 			"C:/Qt/6.4.2/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
 			"C:/Qt/6.4.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake",
 			"C:/Qt/6.4.2/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets.cmake",
@@ -51,7 +51,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 29,
+				"line" : 32,
 				"parent" : 0
 			},
 			{
@@ -75,13 +75,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 61,
+				"line" : 64,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 51,
+				"line" : 54,
 				"parent" : 0
 			},
 			{
@@ -268,7 +268,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-DQT_QML_DEBUG -g"
+					"fragment" : "-g -fdiagnostics-color=always"
 				},
 				{
 					"fragment" : "-std=gnu++17"
@@ -325,7 +325,7 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "C:/College/GitHub/recipeBook/build-recipeBook-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/recipeBook_autogen/include"
+					"path" : "C:/College/GitHub/recipeBook/recipeBook/cmake-build-debug/recipeBook_autogen/include"
 				},
 				{
 					"backtrace" : 14,
@@ -369,7 +369,10 @@
 				1,
 				2,
 				5,
-				8
+				8,
+				13,
+				15,
+				17
 			]
 		}
 	],
@@ -403,7 +406,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-DQT_QML_DEBUG -g",
+				"fragment" : "-g",
 				"role" : "flags"
 			},
 			{
@@ -489,7 +492,10 @@
 				1,
 				2,
 				5,
-				8
+				8,
+				13,
+				15,
+				17
 			]
 		},
 		{
@@ -497,11 +503,15 @@
 			"sourceIndexes" : 
 			[
 				3,
-				7,
+				6,
 				9,
 				11,
 				12,
-				13
+				14,
+				16,
+				18,
+				19,
+				20
 			]
 		},
 		{
@@ -509,16 +519,16 @@
 			"sourceIndexes" : 
 			[
 				4,
-				6,
+				7,
 				10,
-				14
+				21
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				15
+				22
 			]
 		}
 	],
@@ -528,7 +538,7 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "C:/College/GitHub/recipeBook/build-recipeBook-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/recipeBook_autogen/mocs_compilation.cpp",
+			"path" : "cmake-build-debug/recipeBook_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -556,22 +566,6 @@
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "recipe.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "recipe.ui",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
-			"path" : "recipe.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
 			"path" : "popup.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -586,33 +580,87 @@
 			"sourceGroupIndex" : 2
 		},
 		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "recipepage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "recipepage.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "recipepage.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "recipe.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "Image.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "recipeText.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "recipeText.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "ingredients.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "ingredients.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "recipe.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "C:/College/GitHub/recipeBook/build-recipeBook-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/recipeBook_autogen/include/ui_mainwindow.h",
+			"path" : "cmake-build-debug/recipeBook_autogen/include/ui_mainwindow.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "C:/College/GitHub/recipeBook/build-recipeBook-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/recipeBook_autogen/include/ui_recipe.h",
+			"path" : "cmake-build-debug/recipeBook_autogen/include/ui_popup.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "C:/College/GitHub/recipeBook/build-recipeBook-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/recipeBook_autogen/include/ui_popup.h",
+			"path" : "cmake-build-debug/recipeBook_autogen/include/ui_recipepage.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "C:/College/GitHub/recipeBook/build-recipeBook-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/recipeBook_autogen/timestamp",
+			"path" : "cmake-build-debug/recipeBook_autogen/timestamp",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "C:/College/GitHub/recipeBook/build-recipeBook-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/recipeBook_autogen/timestamp.rule",
+			"path" : "cmake-build-debug/recipeBook_autogen/timestamp.rule",
 			"sourceGroupIndex" : 3
 		}
 	],

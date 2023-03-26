@@ -253,6 +253,18 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/College/GitHub/recipeBook/recipeBook/Image.h",
+			"MU",
+			"EWIEGA46WW/moc_Image.cpp",
+			null
+		],
+		[
+			"C:/College/GitHub/recipeBook/recipeBook/ingredients.h",
+			"MU",
+			"EWIEGA46WW/moc_ingredients.cpp",
+			null
+		],
+		[
 			"C:/College/GitHub/recipeBook/recipeBook/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -268,6 +280,12 @@
 			"C:/College/GitHub/recipeBook/recipeBook/recipe.h",
 			"MU",
 			"EWIEGA46WW/moc_recipe.cpp",
+			null
+		],
+		[
+			"C:/College/GitHub/recipeBook/recipeBook/recipeText.h",
+			"MU",
+			"EWIEGA46WW/moc_recipeText.cpp",
 			null
 		],
 		[
@@ -346,10 +364,12 @@
 	"SETTINGS_FILE" : "C:/College/GitHub/recipeBook/build-recipeBook-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/CMakeFiles/recipeBook_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "C:/College/GitHub/recipeBook/recipeBook/ingredients.cpp", "MU", null ],
 		[ "C:/College/GitHub/recipeBook/recipeBook/main.cpp", "MU", null ],
 		[ "C:/College/GitHub/recipeBook/recipeBook/mainwindow.cpp", "MU", null ],
 		[ "C:/College/GitHub/recipeBook/recipeBook/popup.cpp", "MU", null ],
 		[ "C:/College/GitHub/recipeBook/recipeBook/recipe.cpp", "MU", null ],
+		[ "C:/College/GitHub/recipeBook/recipeBook/recipeText.cpp", "MU", null ],
 		[ "C:/College/GitHub/recipeBook/recipeBook/recipepage.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

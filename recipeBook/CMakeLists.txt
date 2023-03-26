@@ -17,16 +17,16 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
-        recipe.cpp
-        recipe.ui
-        recipe.h
         popUp.cpp
         popup.h
         popup.ui
         recipePage.cpp
         recipepage.h
         recipepage.ui
-)
+        recipe.h
+        Image.h
+        recipeText.cpp
+        recipeText.h ingredients.cpp ingredients.h recipe.cpp)
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(recipeBook

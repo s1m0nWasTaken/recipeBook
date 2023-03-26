@@ -73,14 +73,6 @@ build CMakeFiles/recipeBook.dir/mainwindow.cpp.obj: CXX_COMPILER__recipeBook_Deb
   OBJECT_DIR = CMakeFiles\recipeBook.dir
   OBJECT_FILE_DIR = CMakeFiles\recipeBook.dir
 
-build CMakeFiles/recipeBook.dir/recipe.cpp.obj: CXX_COMPILER__recipeBook_Debug C$:/College/GitHub/recipeBook/recipeBook/recipe.cpp || cmake_object_order_depends_target_recipeBook
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\recipeBook.dir\recipe.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17
-  INCLUDES = -IC:/College/GitHub/recipeBook/build-recipeBook-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/recipeBook_autogen/include -isystem C:/Qt/6.4.2/mingw_64/include/QtCore -isystem C:/Qt/6.4.2/mingw_64/include -isystem C:/Qt/6.4.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.4.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.4.2/mingw_64/include/QtGui
-  OBJECT_DIR = CMakeFiles\recipeBook.dir
-  OBJECT_FILE_DIR = CMakeFiles\recipeBook.dir
-
 build CMakeFiles/recipeBook.dir/popup.cpp.obj: CXX_COMPILER__recipeBook_Debug C$:/College/GitHub/recipeBook/recipeBook/popup.cpp || cmake_object_order_depends_target_recipeBook
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\recipeBook.dir\popup.cpp.obj.d
@@ -97,6 +89,30 @@ build CMakeFiles/recipeBook.dir/recipepage.cpp.obj: CXX_COMPILER__recipeBook_Deb
   OBJECT_DIR = CMakeFiles\recipeBook.dir
   OBJECT_FILE_DIR = CMakeFiles\recipeBook.dir
 
+build CMakeFiles/recipeBook.dir/recipeText.cpp.obj: CXX_COMPILER__recipeBook_Debug C$:/College/GitHub/recipeBook/recipeBook/recipeText.cpp || cmake_object_order_depends_target_recipeBook
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\recipeBook.dir\recipeText.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17
+  INCLUDES = -IC:/College/GitHub/recipeBook/build-recipeBook-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/recipeBook_autogen/include -isystem C:/Qt/6.4.2/mingw_64/include/QtCore -isystem C:/Qt/6.4.2/mingw_64/include -isystem C:/Qt/6.4.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.4.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.4.2/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\recipeBook.dir
+  OBJECT_FILE_DIR = CMakeFiles\recipeBook.dir
+
+build CMakeFiles/recipeBook.dir/ingredients.cpp.obj: CXX_COMPILER__recipeBook_Debug C$:/College/GitHub/recipeBook/recipeBook/ingredients.cpp || cmake_object_order_depends_target_recipeBook
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\recipeBook.dir\ingredients.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17
+  INCLUDES = -IC:/College/GitHub/recipeBook/build-recipeBook-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/recipeBook_autogen/include -isystem C:/Qt/6.4.2/mingw_64/include/QtCore -isystem C:/Qt/6.4.2/mingw_64/include -isystem C:/Qt/6.4.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.4.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.4.2/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\recipeBook.dir
+  OBJECT_FILE_DIR = CMakeFiles\recipeBook.dir
+
+build CMakeFiles/recipeBook.dir/recipe.cpp.obj: CXX_COMPILER__recipeBook_Debug C$:/College/GitHub/recipeBook/recipeBook/recipe.cpp || cmake_object_order_depends_target_recipeBook
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\recipeBook.dir\recipe.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17
+  INCLUDES = -IC:/College/GitHub/recipeBook/build-recipeBook-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/recipeBook_autogen/include -isystem C:/Qt/6.4.2/mingw_64/include/QtCore -isystem C:/Qt/6.4.2/mingw_64/include -isystem C:/Qt/6.4.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.4.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.4.2/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\recipeBook.dir
+  OBJECT_FILE_DIR = CMakeFiles\recipeBook.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target recipeBook
@@ -105,7 +121,7 @@ build CMakeFiles/recipeBook.dir/recipepage.cpp.obj: CXX_COMPILER__recipeBook_Deb
 #############################################
 # Link the executable recipeBook.exe
 
-build recipeBook.exe: CXX_EXECUTABLE_LINKER__recipeBook_Debug CMakeFiles/recipeBook.dir/recipeBook_autogen/mocs_compilation.cpp.obj CMakeFiles/recipeBook.dir/main.cpp.obj CMakeFiles/recipeBook.dir/mainwindow.cpp.obj CMakeFiles/recipeBook.dir/recipe.cpp.obj CMakeFiles/recipeBook.dir/popup.cpp.obj CMakeFiles/recipeBook.dir/recipepage.cpp.obj | C$:/Qt/6.4.2/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.4.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.4.2/mingw_64/lib/libQt6Core.a C$:/Qt/6.4.2/mingw_64/lib/libQt6EntryPoint.a || recipeBook_autogen recipeBook_autogen_timestamp_deps
+build recipeBook.exe: CXX_EXECUTABLE_LINKER__recipeBook_Debug CMakeFiles/recipeBook.dir/recipeBook_autogen/mocs_compilation.cpp.obj CMakeFiles/recipeBook.dir/main.cpp.obj CMakeFiles/recipeBook.dir/mainwindow.cpp.obj CMakeFiles/recipeBook.dir/popup.cpp.obj CMakeFiles/recipeBook.dir/recipepage.cpp.obj CMakeFiles/recipeBook.dir/recipeText.cpp.obj CMakeFiles/recipeBook.dir/ingredients.cpp.obj CMakeFiles/recipeBook.dir/recipe.cpp.obj | C$:/Qt/6.4.2/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.4.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.4.2/mingw_64/lib/libQt6Core.a C$:/Qt/6.4.2/mingw_64/lib/libQt6EntryPoint.a || recipeBook_autogen recipeBook_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = C:/Qt/6.4.2/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.4.2/mingw_64/lib/libQt6Gui.a  C:/Qt/6.4.2/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  C:/Qt/6.4.2/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -192,7 +208,7 @@ build recipeBook_autogen_timestamp_deps: phony CMakeFiles/recipeBook_autogen_tim
 #############################################
 # Utility command for recipeBook_autogen
 
-build recipeBook_autogen: phony CMakeFiles/recipeBook_autogen recipeBook_autogen/include/ui_mainwindow.h recipeBook_autogen/include/ui_recipe.h recipeBook_autogen/include/ui_popup.h recipeBook_autogen/include/ui_recipepage.h recipeBook_autogen/timestamp recipeBook_autogen/mocs_compilation.cpp recipeBook_autogen_timestamp_deps
+build recipeBook_autogen: phony CMakeFiles/recipeBook_autogen recipeBook_autogen/include/ui_mainwindow.h recipeBook_autogen/include/ui_popup.h recipeBook_autogen/include/ui_recipepage.h recipeBook_autogen/timestamp recipeBook_autogen/mocs_compilation.cpp recipeBook_autogen_timestamp_deps
 
 
 #############################################
@@ -214,7 +230,7 @@ build CMakeFiles/recipeBook_autogen_timestamp_deps | ${cmake_ninja_workdir}CMake
 #############################################
 # Phony custom command for CMakeFiles\recipeBook_autogen
 
-build CMakeFiles/recipeBook_autogen recipeBook_autogen/include/ui_mainwindow.h recipeBook_autogen/include/ui_recipe.h recipeBook_autogen/include/ui_popup.h recipeBook_autogen/include/ui_recipepage.h | ${cmake_ninja_workdir}CMakeFiles/recipeBook_autogen ${cmake_ninja_workdir}recipeBook_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}recipeBook_autogen/include/ui_recipe.h ${cmake_ninja_workdir}recipeBook_autogen/include/ui_popup.h ${cmake_ninja_workdir}recipeBook_autogen/include/ui_recipepage.h: phony recipeBook_autogen/timestamp || recipeBook_autogen_timestamp_deps
+build CMakeFiles/recipeBook_autogen recipeBook_autogen/include/ui_mainwindow.h recipeBook_autogen/include/ui_popup.h recipeBook_autogen/include/ui_recipepage.h | ${cmake_ninja_workdir}CMakeFiles/recipeBook_autogen ${cmake_ninja_workdir}recipeBook_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}recipeBook_autogen/include/ui_popup.h ${cmake_ninja_workdir}recipeBook_autogen/include/ui_recipepage.h: phony recipeBook_autogen/timestamp || recipeBook_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.
