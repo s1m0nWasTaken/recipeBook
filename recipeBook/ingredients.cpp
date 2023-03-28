@@ -6,20 +6,29 @@
 
 ingredients::ingredients(double size, int type, std::string name) : type(type), name(name)
 {
-    switch(type)
-    {
-        case 1 : this->size.cups = size;
-            break;
-        case 2 : this->size.grams = size;
-            break;
-        case 3 : this->size.milliliters = size;
-            break;
-    }
+    addAmount(size);
 }
+
+
 
 ingredients::~ingredients()
 {
 
+}
+
+ingredients::ingredients(const ingredients &i)
+{
+    type = i.type;
+    name = i.name.c_str();
+    switch (type)
+    {
+        case 1 : this->size.cups = i.size.cups;
+            break;
+        case 2 : this->size.grams = i.size.grams;
+            break;
+        case 3 : this->size.milliliters = i.size.milliliters;
+            break;
+    }
 }
 
 std::string ingredients::toString() {
@@ -41,3 +50,28 @@ std::string ingredients::toString() {
     return temp;
 };
 
+void ingredients::addAmount(double amount)
+{
+    switch(type)
+    {
+        case 1 : this->size.cups = amount;
+            break;
+        case 2 : this->size.grams = amount;
+            break;
+        case 3 : this->size.milliliters = amount;
+            break;
+    }
+}
+
+double ingredients::getAmount()
+{
+    switch(type)
+    {
+        case 1 : return (double)this->size.cups;
+            break;
+        case 2 : return (double)this->size.grams;
+            break;
+        case 3 : return (double)this->size.milliliters;
+            break;
+    }
+}

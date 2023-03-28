@@ -8,13 +8,15 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
+template<class T> void showWindow(T window);
+
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
-
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
 //    void on_listWidget_itemClicked(QListWidgetItem *item);
 
 public slots:

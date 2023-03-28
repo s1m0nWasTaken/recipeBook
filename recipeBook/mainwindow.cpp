@@ -35,3 +35,8 @@ void MainWindow::on_listWidget_itemClicked(QListWidgetItem *item)
 //    this->deleteLater();
 }
 
+template<class T> void showWindow(T window)
+{
+    window.show();
+}
+

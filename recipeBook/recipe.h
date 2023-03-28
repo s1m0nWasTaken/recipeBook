@@ -10,12 +10,10 @@ class recipe : public Image, public recipeText
 {
 public:
     struct NationalCuisine{
-        bool Polish;
-        bool Indian;
-        bool Italian;
-        bool Chinese;
-        bool Russian;
-        bool Ukrainian;
+        bool Polish : 1;
+        bool Italian : 1;
+        bool Chinese : 1;
+        bool Russian : 1;
     };
 
     void showText();
@@ -33,9 +31,20 @@ public:
 
     const std::string &getName() const;
 
+    void addIngredient(ingredients);
+
     void setName(const std::string &name);
 
+    void setCuisine(int type);
+
+    void deepCopy(recipe &i);
+
+    void copy(recipe &i);
+
+    bool getCuisine(int);
+
 private:
+
     void addImage(std::string string) override;
 
     void removeImage() override;
@@ -44,6 +53,7 @@ private:
     std::string Name;
     std::string Image;
     std::vector <ingredients> listIngredients;
+    NationalCuisine cuisine;
 };
 
 

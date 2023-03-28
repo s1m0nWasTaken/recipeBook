@@ -11,6 +11,11 @@ public:
 
     ~ingredients();
 
+    ingredients(const ingredients &i);
+
+    void addAmount(double amount);
+    double getAmount();
+
     std::string toString();
     union sizeOfPortion
     {

@@ -1,3 +1,8 @@
+#define POLISH 1
+#define ITALIAN 2
+#define CHINESE 3
+#define RUSSIAN 4
+
 #include <iostream>
 #include "recipe.h"
 #include "recipeText.h"
@@ -9,9 +14,10 @@
  */
 recipe* recipe::operator+(ingredients newIngredient)
 {
-    listIngredients.push_back(newIngredient);
+    addIngredient(newIngredient);
     return this;
-};
+}
+
 
 void recipe::addImage(std::string string)
 {
@@ -66,4 +72,59 @@ const std::string &recipe::getName() const
 void recipe::setName(const std::string &name)
 {
     Name = name;
+}
+
+void recipe::addIngredient(ingredients i)
+{
+    listIngredients.push_back(i);
+}
+
+void recipe::deepCopy(recipe &i)
+{
+    Name = i.Name.c_str();
+    Image = i.Image.c_str();
+
+    for (const auto j: i.listIngredients)
+    {
+        ingredients temp = j;
+        listIngredients.push_back(temp);
+    }
+}
+
+void recipe::setCuisine(int type)
+{
+    switch (type)
+    {
+        case POLISH: cuisine.Polish = 1;
+            break;
+        case ITALIAN: cuisine.Italian = 1;
+            break;
+        case CHINESE: cuisine.Chinese = 1;
+            break;
+        case RUSSIAN: cuisine.Russian = 1;
+            break;
+    }
+}
+
+bool recipe::getCuisine(int type) {
+    switch (type)
+    {
+        case POLISH: return (cuisine.Polish == 1) ? true : false;
+            break;
+        case ITALIAN: return (cuisine.Italian == 1)? true : false;
+            break;
+        case CHINESE: return (cuisine.Chinese == 1)? true : false;
+            break;
+        case RUSSIAN: return (cuisine.Russian == 1)? true : false;
+            break;
+    }
+
+    return false;
+}
+
+void recipe::copy(recipe &i)
+{
+    Name = i.Name;
+    Image = i.Image;
+    listIngredients = i.listIngredients;
 }
