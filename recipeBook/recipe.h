@@ -1,23 +1,30 @@
 #ifndef RECIPEBOOK_RECIPE_H
 #define RECIPEBOOK_RECIPE_H
+
 #include "recipeText.h"
 #include "Image.h"
 #include "ingredients.h"
 #include "vector"
+#include <string>
 
+using namespace std;
 
 class recipe : public Image, public recipeText
 {
 public:
-    struct NationalCuisine{
-        bool Polish : 1;
-        bool Italian : 1;
-        bool Chinese : 1;
-        bool Russian : 1;
+    struct NationalCuisine
+    {
+        bool Polish: 1;
+        bool Italian: 1;
+        bool Ukrainian: 1;
+        bool Russian: 1;
     };
 
     void showText();
-    recipe* operator+(ingredients);
+
+    void setText(string input);
+
+    recipe *operator+(ingredients);
 
     const std::string &getImage() const;
 
@@ -43,6 +50,8 @@ public:
 
     bool getCuisine(int);
 
+    string getText();
+
 private:
 
     void addImage(std::string string) override;
@@ -52,7 +61,7 @@ private:
 private:
     std::string Name;
     std::string Image;
-    std::vector <ingredients> listIngredients;
+    std::vector<ingredients> listIngredients;
     NationalCuisine cuisine;
 };
 

@@ -3,22 +3,45 @@
 #include "./ui_mainwindow.h"
 #include "popUp.h"
 #include "recipepage.h"
+#include "ingredients.h"
 #include "QListWidgetItem"
+#include "QString"
 
 MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+        : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
     ui->listWidget->addItem("test");
     for (int i = 0; i < 5; i++)
     {
         recipes[i] = new recipe;
+        recipes[i]->setText("test " + to_string(i));
         recipes[i]->setName("test " + std::to_string(i));
-        ui->listWidget->addItem(QString::fromStdString(recipes[i]->getName()));
+
+        vector<ingredients> *ingr = new vector<ingredients>;
+
+        for (int j = 0; j < 3; j++)
+        {
+            ingredients *temp = new ingredients(20.0, i, "test ingr" + to_string(i));
+            ingr->push_back(*temp);
+        }
+
+        recipes[i]->setListIngredients(*ingr);
+
+        recipes[i]->setCuisine(1);
+
+        QListWidgetItem *item = new QListWidgetItem;
+        item->setData(1, i);
+        item->setText(QString::fromStdString(recipes[i]->getName()));
+
+        ui->listWidget->addItem(item);
     }
+
     popUp *window = new popUp();
     connect(ui->pushButton, &QPushButton::clicked, window, &popUp::show);
+    page = new recipePage(this);
+    connect(ui->listWidget, &QListWidget::itemClicked, page, &recipePage::show);
+    connect(this, SIGNAL(sendRecipe(recipe)), page, SLOT(addRecipe(recipe)));
 }
 
 MainWindow::~MainWindow()
@@ -27,15 +50,14 @@ MainWindow::~MainWindow()
 }
 
 
-
 void MainWindow::on_listWidget_itemClicked(QListWidgetItem *item)
 {
-    recipePage *page = new recipePage(this);
-    page->show();
-//    this->deleteLater();
+    int address = item->data(1).toInt();
+    emit(sendRecipe(*(recipes[address])));
 }
 
-template<class T> void showWindow(T window)
+template<class T>
+void showWindow(T window)
 {
     window.show();
 }

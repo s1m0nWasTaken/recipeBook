@@ -1,6 +1,6 @@
 #define POLISH 1
 #define ITALIAN 2
-#define CHINESE 3
+#define UKRAINIAN 3
 #define RUSSIAN 4
 
 #include <iostream>
@@ -12,7 +12,7 @@
 /*
  * Overloading the "+" operator
  */
-recipe* recipe::operator+(ingredients newIngredient)
+recipe *recipe::operator+(ingredients newIngredient)
 {
     addIngredient(newIngredient);
     return this;
@@ -52,7 +52,7 @@ void recipe::removeImage()
 
 void recipe::showText()
 {
-    for(ingredients i: listIngredients)
+    for (ingredients i: listIngredients)
     {
         std::cout << i.toString() << getIngredientName(i) << std::endl;
     }
@@ -95,27 +95,36 @@ void recipe::setCuisine(int type)
 {
     switch (type)
     {
-        case POLISH: cuisine.Polish = 1;
+        case POLISH:
+            cuisine.Polish = 1;
             break;
-        case ITALIAN: cuisine.Italian = 1;
+        case ITALIAN:
+            cuisine.Italian = 1;
             break;
-        case CHINESE: cuisine.Chinese = 1;
+        case UKRAINIAN:
+            cuisine.Ukrainian = 1;
             break;
-        case RUSSIAN: cuisine.Russian = 1;
+        case RUSSIAN:
+            cuisine.Russian = 1;
             break;
     }
 }
 
-bool recipe::getCuisine(int type) {
+bool recipe::getCuisine(int type)
+{
     switch (type)
     {
-        case POLISH: return (cuisine.Polish == 1) ? true : false;
+        case POLISH:
+            return (cuisine.Polish == 1) ? true : false;
             break;
-        case ITALIAN: return (cuisine.Italian == 1)? true : false;
+        case ITALIAN:
+            return (cuisine.Italian == 1) ? true : false;
             break;
-        case CHINESE: return (cuisine.Chinese == 1)? true : false;
+        case UKRAINIAN:
+            return (cuisine.Ukrainian == 1) ? true : false;
             break;
-        case RUSSIAN: return (cuisine.Russian == 1)? true : false;
+        case RUSSIAN:
+            return (cuisine.Russian == 1) ? true : false;
             break;
     }
 
@@ -127,4 +136,14 @@ void recipe::copy(recipe &i)
     Name = i.Name;
     Image = i.Image;
     listIngredients = i.listIngredients;
+}
+
+void recipe::setText(string input)
+{
+    storeText = input;
+}
+
+string recipe::getText()
+{
+    return storeText;
 }
