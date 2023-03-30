@@ -14,10 +14,10 @@ class recipe : public Image, public recipeText
 public:
     struct NationalCuisine
     {
-        bool Polish: 1;
-        bool Italian: 1;
-        bool Ukrainian: 1;
-        bool Russian: 1;
+        bool Polish;
+        bool Italian;
+        bool Ukrainian;
+        bool Russian;
     };
 
     void showText();
@@ -61,6 +61,13 @@ private:
 private:
     std::string Name;
     std::string Image;
+    std::string Image2;
+public:
+    const string &getImage2() const;
+
+    void setImage2(const string &image2);
+
+private:
     std::vector<ingredients> listIngredients;
     NationalCuisine cuisine;
 };

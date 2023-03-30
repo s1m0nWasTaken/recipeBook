@@ -22,6 +22,8 @@ public slots:
 
     void addRecipe(recipe);
 
+    void on_horizontalSlider_valueChanged(int);
+
 private:
     Ui::recipePage *ui;
     recipe recipeInput;

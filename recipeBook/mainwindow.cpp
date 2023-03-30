@@ -37,8 +37,6 @@ MainWindow::MainWindow(QWidget *parent)
         ui->listWidget->addItem(item);
     }
 
-    popUp *window = new popUp();
-    connect(ui->pushButton, &QPushButton::clicked, window, &popUp::show);
     page = new recipePage(this);
     connect(ui->listWidget, &QListWidget::itemClicked, page, &recipePage::show);
     connect(this, SIGNAL(sendRecipe(recipe)), page, SLOT(addRecipe(recipe)));
@@ -60,5 +58,69 @@ template<class T>
 void showWindow(T window)
 {
     window.show();
+}
+
+
+void MainWindow::on_pushButton_clicked()
+{
+    ui->listWidget->clear();
+    bool milk = ui->checkBox->isChecked();
+    bool nut = ui->checkBox_2->isChecked();
+    bool wheat = ui->checkBox_3->isChecked();
+    bool egg = ui->checkBox_4->isChecked();
+    int pos = 0;
+
+    for (recipe *i: recipes)
+    {
+        recipe test = *i;
+        for (ingredients j: i->getListIngredients())
+        {
+            if (milk && j.getAllergies(1))
+            {
+                continue;
+            }
+            if (nut && j.getAllergies(2))
+            {
+                continue;
+            }
+            if (wheat && j.getAllergies(3))
+            {
+                continue;
+            }
+            if (egg && j.getAllergies(4))
+            {
+                continue;
+            }
+        }
+
+        bool addItem = false;
+
+        if (ui->polish->isChecked() && i->getCuisine(1))
+        {
+            addItem = true;
+        }
+        if (ui->italian->isChecked() && i->getCuisine(2))
+        {
+            addItem = true;
+        }
+        if (ui->ukrainian->isChecked() && i->getCuisine(3))
+        {
+            addItem = true;
+        }
+        if (ui->russian->isChecked() && i->getCuisine(4))
+        {
+            addItem = true;
+        }
+
+        if (addItem)
+        {
+            QListWidgetItem *item = new QListWidgetItem;
+            item->setData(1, pos);
+            item->setText(QString::fromStdString(i->getName()));
+            ui->listWidget->addItem(item);
+        }
+
+        pos++;
+    }
 }
 

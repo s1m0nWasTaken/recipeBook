@@ -21,7 +21,23 @@
     <item row="0" column="0">
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
-       <widget class="QGraphicsView" name="graphicsView"/>
+       <widget class="QLabel" name="label">
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>300</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>500</width>
+          <height>500</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
       </item>
       <item>
        <widget class="QSlider" name="horizontalSlider">
@@ -43,7 +59,7 @@
      <x>0</x>
      <y>0</y>
      <width>966</width>
-     <height>21</height>
+     <height>17</height>
     </rect>
    </property>
   </widget>

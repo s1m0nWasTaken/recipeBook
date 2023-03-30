@@ -28,6 +28,8 @@ public:
 
 public slots:
 
+    void on_pushButton_clicked();
+
     void on_listWidget_itemClicked(QListWidgetItem *item);
 
 signals:
@@ -37,6 +39,7 @@ signals:
 private:
     recipe *recipes[5];
     recipePage *page;
+
     Ui::MainWindow *ui;
 };
 

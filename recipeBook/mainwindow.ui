@@ -26,7 +26,7 @@
          </size>
         </property>
         <property name="text">
-         <string>Select your allergies</string>
+         <string>Select your Allergies</string>
         </property>
        </widget>
       </item>
@@ -82,28 +82,28 @@
        </widget>
       </item>
       <item>
-       <widget class="QRadioButton" name="radioButton">
+       <widget class="QRadioButton" name="polish">
         <property name="text">
          <string>RadioButton</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QRadioButton" name="radioButton_3">
+       <widget class="QRadioButton" name="italian">
         <property name="text">
          <string>RadioButton</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QRadioButton" name="radioButton_4">
+       <widget class="QRadioButton" name="ukrainian">
         <property name="text">
          <string>RadioButton</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QRadioButton" name="radioButton_2">
+       <widget class="QRadioButton" name="russian">
         <property name="text">
          <string>RadioButton</string>
         </property>

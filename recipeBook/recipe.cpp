@@ -97,14 +97,26 @@ void recipe::setCuisine(int type)
     {
         case POLISH:
             cuisine.Polish = 1;
+            cuisine.Italian = 0;
+            cuisine.Ukrainian = 0;
+            cuisine.Russian = 0;
             break;
         case ITALIAN:
+            cuisine.Polish = 0;
             cuisine.Italian = 1;
+            cuisine.Ukrainian = 0;
+            cuisine.Russian = 0;
             break;
         case UKRAINIAN:
+            cuisine.Polish = 0;
+            cuisine.Italian = 0;
             cuisine.Ukrainian = 1;
+            cuisine.Russian = 0;
             break;
         case RUSSIAN:
+            cuisine.Polish = 0;
+            cuisine.Italian = 0;
+            cuisine.Ukrainian = 0;
             cuisine.Russian = 1;
             break;
     }
@@ -115,16 +127,16 @@ bool recipe::getCuisine(int type)
     switch (type)
     {
         case POLISH:
-            return (cuisine.Polish == 1) ? true : false;
+            return cuisine.Polish;
             break;
         case ITALIAN:
-            return (cuisine.Italian == 1) ? true : false;
+            return cuisine.Italian;
             break;
         case UKRAINIAN:
-            return (cuisine.Ukrainian == 1) ? true : false;
+            return cuisine.Ukrainian;
             break;
         case RUSSIAN:
-            return (cuisine.Russian == 1) ? true : false;
+            return cuisine.Russian;
             break;
     }
 
@@ -146,4 +158,14 @@ void recipe::setText(string input)
 string recipe::getText()
 {
     return storeText;
+}
+
+const string &recipe::getImage2() const
+{
+    return Image2;
+}
+
+void recipe::setImage2(const string &image2)
+{
+    Image2 = image2;
 }
