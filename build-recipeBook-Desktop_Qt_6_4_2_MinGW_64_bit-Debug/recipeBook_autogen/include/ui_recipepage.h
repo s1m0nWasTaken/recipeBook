@@ -11,13 +11,14 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QGridLayout>
-#include <QtWidgets/QListView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QSlider>
 #include <QtWidgets/QStatusBar>
-#include <QtWidgets/QTextEdit>
+#include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -28,10 +29,11 @@ class Ui_recipePage
 public:
     QWidget *centralwidget;
     QGridLayout *gridLayout;
+    QTextBrowser *textBrowser;
     QVBoxLayout *verticalLayout;
-    QGraphicsView *graphicsView;
-    QTextEdit *textEdit;
-    QListView *listView;
+    QLabel *label;
+    QSlider *horizontalSlider;
+    QListWidget *listWidget;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -44,30 +46,38 @@ public:
         centralwidget->setObjectName("centralwidget");
         gridLayout = new QGridLayout(centralwidget);
         gridLayout->setObjectName("gridLayout");
+        textBrowser = new QTextBrowser(centralwidget);
+        textBrowser->setObjectName("textBrowser");
+
+        gridLayout->addWidget(textBrowser, 0, 2, 1, 1);
+
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName("verticalLayout");
-        graphicsView = new QGraphicsView(centralwidget);
-        graphicsView->setObjectName("graphicsView");
+        label = new QLabel(centralwidget);
+        label->setObjectName("label");
+        label->setMinimumSize(QSize(300, 300));
+        label->setMaximumSize(QSize(500, 500));
 
-        verticalLayout->addWidget(graphicsView);
+        verticalLayout->addWidget(label);
 
-        textEdit = new QTextEdit(centralwidget);
-        textEdit->setObjectName("textEdit");
+        horizontalSlider = new QSlider(centralwidget);
+        horizontalSlider->setObjectName("horizontalSlider");
+        horizontalSlider->setOrientation(Qt::Horizontal);
 
-        verticalLayout->addWidget(textEdit);
+        verticalLayout->addWidget(horizontalSlider);
+
+        listWidget = new QListWidget(centralwidget);
+        listWidget->setObjectName("listWidget");
+
+        verticalLayout->addWidget(listWidget);
 
 
         gridLayout->addLayout(verticalLayout, 0, 0, 1, 1);
 
-        listView = new QListView(centralwidget);
-        listView->setObjectName("listView");
-
-        gridLayout->addWidget(listView, 0, 1, 1, 1);
-
         recipePage->setCentralWidget(centralwidget);
         menubar = new QMenuBar(recipePage);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 966, 25));
+        menubar->setGeometry(QRect(0, 0, 966, 17));
         recipePage->setMenuBar(menubar);
         statusbar = new QStatusBar(recipePage);
         statusbar->setObjectName("statusbar");
@@ -81,6 +91,7 @@ public:
     void retranslateUi(QMainWindow *recipePage)
     {
         recipePage->setWindowTitle(QCoreApplication::translate("recipePage", "MainWindow", nullptr));
+        label->setText(QString());
     } // retranslateUi
 
 };

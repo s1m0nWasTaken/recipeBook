@@ -10,11 +10,6 @@ recipePage::recipePage(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->textBrowser->setText(QString::fromStdString(recipeInput.getText()));
-
-    QPixmap img("C:/College/GitHub/recipeBook/recipeBook/Best-Lasagna-550-500x500.jpg");
-    int w = ui->label->width();
-    int h = ui->label->height();
-    ui->label->setPixmap(img.scaled(w, h, Qt::KeepAspectRatio));
 }
 
 recipePage::~recipePage()
@@ -26,9 +21,16 @@ void recipePage::addRecipe(recipe input)
 {
     recipeInput = input;
     ui->textBrowser->setText(QString::fromStdString(recipeInput.getText()));
+    ui->listWidget->clear();
+
+    QPixmap img(QString::fromStdString(recipeInput.getImage()));
+    int w = ui->label->width();
+    int h = ui->label->height();
+    ui->label->setPixmap(img.scaled(w, h, Qt::KeepAspectRatio));
 
     for (auto i: recipeInput.getListIngredients())
     {
+        i.toString();
         ui->listWidget->addItem(QString::fromStdString(i.toString()));
     }
 }
@@ -37,13 +39,13 @@ void recipePage::on_horizontalSlider_valueChanged(int value)
 {
     if (value < 50)
     {
-        QPixmap img("C:/College/GitHub/recipeBook/recipeBook/Best-Lasagna-550-500x500.jpg");
+        QPixmap img(QString::fromStdString(recipeInput.getImage()));
         int w = ui->label->width();
         int h = ui->label->height();
         ui->label->setPixmap(img.scaled(w, h, Qt::KeepAspectRatio));
     } else
     {
-        QPixmap img("C:/College/GitHub/recipeBook/recipeBook/Sourdough-blinis-4-500x500.jpg");
+        QPixmap img(QString::fromStdString(recipeInput.getImage2()));
         int w = ui->label->width();
         int h = ui->label->height();
         ui->label->setPixmap(img.scaled(w, h, Qt::KeepAspectRatio));

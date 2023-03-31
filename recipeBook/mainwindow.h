@@ -32,15 +32,18 @@ public slots:
 
     void on_listWidget_itemClicked(QListWidgetItem *item);
 
+    void on_actionReset_triggered();
+
 signals:
 
     void sendRecipe(recipe);
-
 private:
-    recipe *recipes[5];
+    recipe *recipes[4];
     recipePage *page;
 
     Ui::MainWindow *ui;
+
+    void setRecipes();
 };
 
 #endif // MAINWINDOW_H

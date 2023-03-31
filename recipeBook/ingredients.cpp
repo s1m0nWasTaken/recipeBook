@@ -30,7 +30,12 @@ ingredients::ingredients(const ingredients &i)
         case 3 :
             this->size.milliliters = i.size.milliliters;
             break;
+        case 4:
+            this->size.item = i.size.item;
+            break;
     }
+
+    allergies = i.allergies;
 }
 
 std::string ingredients::toString()
@@ -54,6 +59,7 @@ std::string ingredients::toString()
         case 4 :
             temp = temp.append(std::to_string(size.item));
             temp = temp.append(" ");
+            temp = temp.append(name);
             break;
     }
 
@@ -118,21 +124,21 @@ bool ingredients::getAllergies(int type)
     return false;
 }
 
-void ingredients::setAllergies(int)
+void ingredients::setAllergies(int pi)
 {
-    switch (type)
+    switch (pi)
     {
         case 1:
-            allergies.milk = 1;
+            allergies.milk = true;
             break;
         case 2:
-            allergies.nuts = 1;
+            allergies.nuts = true;
             break;
         case 3:
-            allergies.wheat = 1;
+            allergies.wheat = true;
             break;
         case 4:
-            allergies.egg = 1;
+            allergies.egg = true;
             break;
     }
 }

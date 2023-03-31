@@ -3,6 +3,10 @@ C:/College/GitHub/recipeBook/recipeBook/recipepage.h
  mmc:Q_OBJECT
  mdp:C:/College/GitHub/recipeBook/recipeBook/recipepage.h
  mdp:C:/College/GitHub/recipeBook/recipeBook/cmake-build-debug/recipeBook_autogen/moc_predefs.h
+ mdp:C:/College/GitHub/recipeBook/recipeBook/Image.h
+ mdp:C:/College/GitHub/recipeBook/recipeBook/ingredients.h
+ mdp:C:/College/GitHub/recipeBook/recipeBook/recipe.h
+ mdp:C:/College/GitHub/recipeBook/recipeBook/recipeText.h
  mdp:C:/Qt/6.4.2/mingw_64/include/QtCore/qalgorithms.h
  mdp:C:/Qt/6.4.2/mingw_64/include/QtCore/qanystringview.h
  mdp:C:/Qt/6.4.2/mingw_64/include/QtCore/qarraydata.h
@@ -342,6 +346,7 @@ C:/College/GitHub/recipeBook/recipeBook/mainwindow.h
  mdp:C:/College/GitHub/recipeBook/recipeBook/ingredients.h
  mdp:C:/College/GitHub/recipeBook/recipeBook/recipe.h
  mdp:C:/College/GitHub/recipeBook/recipeBook/recipeText.h
+ mdp:C:/College/GitHub/recipeBook/recipeBook/recipepage.h
  mdp:C:/Qt/6.4.2/mingw_64/include/QtCore/qabstractitemmodel.h
  mdp:C:/Qt/6.4.2/mingw_64/include/QtCore/qalgorithms.h
  mdp:C:/Qt/6.4.2/mingw_64/include/QtCore/qanystringview.h

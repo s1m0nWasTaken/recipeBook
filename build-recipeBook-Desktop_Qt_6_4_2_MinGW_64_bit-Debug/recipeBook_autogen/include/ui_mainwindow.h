@@ -13,6 +13,7 @@
 #include <QtGui/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QCheckBox>
+#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QListWidget>
@@ -22,6 +23,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QRadioButton>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QToolBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -30,125 +32,141 @@ QT_BEGIN_NAMESPACE
 class Ui_MainWindow
 {
 public:
+    QAction *actionReset;
     QWidget *centralwidget;
-    QWidget *verticalLayoutWidget_2;
+    QGridLayout *gridLayout;
     QVBoxLayout *verticalLayout_2;
     QLabel *label;
-    QCheckBox *checkBox_4;
+    QCheckBox *checkBox;
     QCheckBox *checkBox_2;
     QCheckBox *checkBox_3;
-    QCheckBox *checkBox;
-    QLineEdit *lineEdit;
-    QPushButton *pushButton;
-    QWidget *verticalLayoutWidget_3;
+    QCheckBox *checkBox_4;
     QVBoxLayout *verticalLayout_3;
     QLabel *label_2;
+    QRadioButton *polish;
+    QRadioButton *italian;
+    QRadioButton *ukrainian;
+    QRadioButton *russian;
     QRadioButton *radioButton;
-    QRadioButton *radioButton_3;
-    QRadioButton *radioButton_4;
-    QRadioButton *radioButton_2;
     QListWidget *listWidget;
+    QLineEdit *lineEdit;
+    QPushButton *pushButton;
     QMenuBar *menubar;
     QMenu *menuSearch;
-    QMenu *menuFind_Meal;
     QStatusBar *statusbar;
+    QToolBar *toolBar;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
         MainWindow->resize(800, 600);
+        actionReset = new QAction(MainWindow);
+        actionReset->setObjectName("actionReset");
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
-        verticalLayoutWidget_2 = new QWidget(centralwidget);
-        verticalLayoutWidget_2->setObjectName("verticalLayoutWidget_2");
-        verticalLayoutWidget_2->setGeometry(QRect(30, 0, 361, 231));
-        verticalLayout_2 = new QVBoxLayout(verticalLayoutWidget_2);
+        gridLayout = new QGridLayout(centralwidget);
+        gridLayout->setObjectName("gridLayout");
+        verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName("verticalLayout_2");
-        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(verticalLayoutWidget_2);
+        label = new QLabel(centralwidget);
         label->setObjectName("label");
         label->setMaximumSize(QSize(16777215, 50));
 
         verticalLayout_2->addWidget(label);
 
-        checkBox_4 = new QCheckBox(verticalLayoutWidget_2);
-        checkBox_4->setObjectName("checkBox_4");
-
-        verticalLayout_2->addWidget(checkBox_4);
-
-        checkBox_2 = new QCheckBox(verticalLayoutWidget_2);
-        checkBox_2->setObjectName("checkBox_2");
-
-        verticalLayout_2->addWidget(checkBox_2);
-
-        checkBox_3 = new QCheckBox(verticalLayoutWidget_2);
-        checkBox_3->setObjectName("checkBox_3");
-
-        verticalLayout_2->addWidget(checkBox_3);
-
-        checkBox = new QCheckBox(verticalLayoutWidget_2);
+        checkBox = new QCheckBox(centralwidget);
         checkBox->setObjectName("checkBox");
 
         verticalLayout_2->addWidget(checkBox);
 
-        lineEdit = new QLineEdit(centralwidget);
-        lineEdit->setObjectName("lineEdit");
-        lineEdit->setGeometry(QRect(20, 510, 691, 31));
-        pushButton = new QPushButton(centralwidget);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(710, 510, 71, 31));
-        verticalLayoutWidget_3 = new QWidget(centralwidget);
-        verticalLayoutWidget_3->setObjectName("verticalLayoutWidget_3");
-        verticalLayoutWidget_3->setGeometry(QRect(410, 0, 361, 231));
-        verticalLayout_3 = new QVBoxLayout(verticalLayoutWidget_3);
+        checkBox_2 = new QCheckBox(centralwidget);
+        checkBox_2->setObjectName("checkBox_2");
+
+        verticalLayout_2->addWidget(checkBox_2);
+
+        checkBox_3 = new QCheckBox(centralwidget);
+        checkBox_3->setObjectName("checkBox_3");
+
+        verticalLayout_2->addWidget(checkBox_3);
+
+        checkBox_4 = new QCheckBox(centralwidget);
+        checkBox_4->setObjectName("checkBox_4");
+
+        verticalLayout_2->addWidget(checkBox_4);
+
+
+        gridLayout->addLayout(verticalLayout_2, 0, 0, 1, 1);
+
+        verticalLayout_3 = new QVBoxLayout();
         verticalLayout_3->setObjectName("verticalLayout_3");
-        verticalLayout_3->setContentsMargins(0, 0, 0, 0);
-        label_2 = new QLabel(verticalLayoutWidget_3);
+        label_2 = new QLabel(centralwidget);
         label_2->setObjectName("label_2");
         label_2->setMinimumSize(QSize(0, 50));
         label_2->setMaximumSize(QSize(16777215, 50));
 
         verticalLayout_3->addWidget(label_2);
 
-        radioButton = new QRadioButton(verticalLayoutWidget_3);
+        polish = new QRadioButton(centralwidget);
+        polish->setObjectName("polish");
+
+        verticalLayout_3->addWidget(polish);
+
+        italian = new QRadioButton(centralwidget);
+        italian->setObjectName("italian");
+
+        verticalLayout_3->addWidget(italian);
+
+        ukrainian = new QRadioButton(centralwidget);
+        ukrainian->setObjectName("ukrainian");
+
+        verticalLayout_3->addWidget(ukrainian);
+
+        russian = new QRadioButton(centralwidget);
+        russian->setObjectName("russian");
+
+        verticalLayout_3->addWidget(russian);
+
+        radioButton = new QRadioButton(centralwidget);
         radioButton->setObjectName("radioButton");
+        radioButton->setChecked(true);
 
         verticalLayout_3->addWidget(radioButton);
 
-        radioButton_3 = new QRadioButton(verticalLayoutWidget_3);
-        radioButton_3->setObjectName("radioButton_3");
 
-        verticalLayout_3->addWidget(radioButton_3);
-
-        radioButton_4 = new QRadioButton(verticalLayoutWidget_3);
-        radioButton_4->setObjectName("radioButton_4");
-
-        verticalLayout_3->addWidget(radioButton_4);
-
-        radioButton_2 = new QRadioButton(verticalLayoutWidget_3);
-        radioButton_2->setObjectName("radioButton_2");
-
-        verticalLayout_3->addWidget(radioButton_2);
+        gridLayout->addLayout(verticalLayout_3, 0, 1, 1, 2);
 
         listWidget = new QListWidget(centralwidget);
         listWidget->setObjectName("listWidget");
-        listWidget->setGeometry(QRect(25, 240, 751, 261));
+
+        gridLayout->addWidget(listWidget, 1, 0, 1, 3);
+
+        lineEdit = new QLineEdit(centralwidget);
+        lineEdit->setObjectName("lineEdit");
+
+        gridLayout->addWidget(lineEdit, 2, 0, 1, 2);
+
+        pushButton = new QPushButton(centralwidget);
+        pushButton->setObjectName("pushButton");
+
+        gridLayout->addWidget(pushButton, 2, 2, 1, 1);
+
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 800, 25));
+        menubar->setGeometry(QRect(0, 0, 800, 21));
         menuSearch = new QMenu(menubar);
         menuSearch->setObjectName("menuSearch");
-        menuFind_Meal = new QMenu(menubar);
-        menuFind_Meal->setObjectName("menuFind_Meal");
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
         MainWindow->setStatusBar(statusbar);
+        toolBar = new QToolBar(MainWindow);
+        toolBar->setObjectName("toolBar");
+        MainWindow->addToolBar(Qt::TopToolBarArea, toolBar);
 
         menubar->addAction(menuSearch->menuAction());
-        menubar->addAction(menuFind_Meal->menuAction());
+        menuSearch->addAction(actionReset);
 
         retranslateUi(MainWindow);
 
@@ -158,19 +176,21 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        label->setText(QCoreApplication::translate("MainWindow", "Select your allergies", nullptr));
-        checkBox_4->setText(QCoreApplication::translate("MainWindow", "CheckBox", nullptr));
-        checkBox_2->setText(QCoreApplication::translate("MainWindow", "CheckBox", nullptr));
-        checkBox_3->setText(QCoreApplication::translate("MainWindow", "CheckBox", nullptr));
-        checkBox->setText(QCoreApplication::translate("MainWindow", "CheckBox", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "Search", nullptr));
+        actionReset->setText(QCoreApplication::translate("MainWindow", "Reset", nullptr));
+        label->setText(QCoreApplication::translate("MainWindow", "Select your Allergies", nullptr));
+        checkBox->setText(QCoreApplication::translate("MainWindow", "Milk", nullptr));
+        checkBox_2->setText(QCoreApplication::translate("MainWindow", "Nut", nullptr));
+        checkBox_3->setText(QCoreApplication::translate("MainWindow", "Wheat", nullptr));
+        checkBox_4->setText(QCoreApplication::translate("MainWindow", "Egg", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "Select cousine type", nullptr));
-        radioButton->setText(QCoreApplication::translate("MainWindow", "RadioButton", nullptr));
-        radioButton_3->setText(QCoreApplication::translate("MainWindow", "RadioButton", nullptr));
-        radioButton_4->setText(QCoreApplication::translate("MainWindow", "RadioButton", nullptr));
-        radioButton_2->setText(QCoreApplication::translate("MainWindow", "RadioButton", nullptr));
+        polish->setText(QCoreApplication::translate("MainWindow", "Polish", nullptr));
+        italian->setText(QCoreApplication::translate("MainWindow", "Italian", nullptr));
+        ukrainian->setText(QCoreApplication::translate("MainWindow", "Ukrainian", nullptr));
+        russian->setText(QCoreApplication::translate("MainWindow", "Russian", nullptr));
+        radioButton->setText(QCoreApplication::translate("MainWindow", "Any", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "Search", nullptr));
         menuSearch->setTitle(QCoreApplication::translate("MainWindow", "Filters", nullptr));
-        menuFind_Meal->setTitle(QCoreApplication::translate("MainWindow", "Find Meal", nullptr));
+        toolBar->setWindowTitle(QCoreApplication::translate("MainWindow", "toolBar", nullptr));
     } // retranslateUi
 
 };
